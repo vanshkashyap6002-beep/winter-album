@@ -7,7 +7,8 @@
     "dev": "vite --host 127.0.0.1",
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview --host 127.0.0.1",
-    "test": "node interaction-check.mjs"
+    "test": "node interaction-check.mjs",
+    "prebuild": "node chermo-integrate.cjs"
   },
   "dependencies": {
     "react": "^19.2.0",
